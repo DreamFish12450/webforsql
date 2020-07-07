@@ -36,6 +36,7 @@
 
     </div>
     <form action="inqureScore.do">
+        <p>您的学号是${sessionScope.Sno}</p>
         <div class="select_part">
             <span>请选择查询的学期:</span>
             <select name = "semester">

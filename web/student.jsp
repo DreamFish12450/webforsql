@@ -15,7 +15,11 @@
 <div class="centertext">
     <h1>功 能 选 择 </h1>
     <p>您的学号是${Sno}</p>
+    <%
+        String Sno = (String) request.getAttribute("Sno");
+        session.setAttribute("Sno",Sno);
 
+    %>
     <div class="button" style="margin-left: 225px;">
 
         <a href="inqureScore.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询考试成绩</a>

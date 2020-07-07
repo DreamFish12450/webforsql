@@ -57,6 +57,7 @@ public class adminverify extends HttpServlet {
 				}
 				jdbcConnect.destoryConnection();
 				if(pass.equals(Sno)){
+					System.out.println("password is"+pass);
 					request.setAttribute("Sno",Sno);
 					request.getRequestDispatcher("student.jsp").forward(request,response);
 				}else {
