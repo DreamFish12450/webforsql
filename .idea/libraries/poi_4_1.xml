@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="poi-4.1">
+    <CLASSES>
+      <root url="file://C:/迅雷下载/poi-4.1.2" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/迅雷下载/poi-4.1.2" recursive="false" />
+  </library>
+</component>
