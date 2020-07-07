@@ -3,12 +3,12 @@ import java.sql.*;
 
 
 public class JDBCConnect {
-
+    Connection conn = null;
 
 
 
     public  Connection getConnection() throws SQLException{
-        return getConnection("zjut_info","admin1","123456");
+        return getConnection("zhoukeyuMIS08","sa","123456");
     }
     public  Connection getConnection(String dbName,String username,String password) throws  SQLException{
         String driverName="com.microsoft.sqlserver.jdbc.SQLServerDriver";//SQL数据库引擎
@@ -18,7 +18,7 @@ public class JDBCConnect {
         try
         {
             Class.forName(driverName);
-            Connection conn=DriverManager.getConnection(dbURL,Name,Pwd);
+            conn=DriverManager.getConnection(dbURL,Name,Pwd);
             System.out.println("success");
             return conn;
         }catch(Exception e){
@@ -29,7 +29,13 @@ public class JDBCConnect {
 
     }
     public void destoryConnection(){
-
+        try {
+            if(conn!=null){
+                conn.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }
