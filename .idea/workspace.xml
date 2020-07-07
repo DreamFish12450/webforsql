@@ -7,20 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/beans/stuClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/beans/stuGpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureClasses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureGpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/inqureClassResult.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/inqureGpa.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/inqureGpaResult.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/teacherCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/teacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureTeacherCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/editScore.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/editScoreNotFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureTeacherCourse.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureTeacherCourseResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/stuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/stuDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/inqureScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/servlet/inqureScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/inqureClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureClass.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/inqureScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureScore.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/services/adminverify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/services/adminverify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/servlet/uploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/servlet/uploadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/teacher.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -270,7 +266,7 @@
       <workItem from="1594009420127" duration="978000" />
       <workItem from="1594085805226" duration="1103000" />
       <workItem from="1594101014790" duration="18767000" />
-      <workItem from="1594124005584" duration="5881000" />
+      <workItem from="1594124005584" duration="11284000" />
     </task>
     <task id="LOCAL-00001" summary="change teste">
       <created>1594009563384</created>
@@ -300,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594120866849</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit 实现查询gpa 查询成绩 查询班级和课的对应关系">
+      <created>1594129992633</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594129992633</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +368,7 @@
     <MESSAGE value="change test2" />
     <MESSAGE value="commit before dinner TODO 跳转" />
     <MESSAGE value="commit do 完查询 注意bean的命名规范" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit do 完查询 注意bean的命名规范" />
+    <MESSAGE value="commit 实现查询gpa 查询成绩 查询班级和课的对应关系" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 实现查询gpa 查询成绩 查询班级和课的对应关系" />
   </component>
 </project>

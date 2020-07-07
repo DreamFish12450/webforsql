@@ -138,7 +138,7 @@ public class uploadFile extends HttpServlet {
                 out.close();
                 //删除处理文件上传时生成的临时文件
                 //item.delete();
-                String dbURL = "jdbc:sqlserver://localhost:1433;DatabaseName=test";
+                String dburl = "jdbc:sqlserver://localhost:1433;DatabaseName=zhoukeyuMIS08";
 
                 try {
                     Connection con=null;
@@ -146,15 +146,11 @@ public class uploadFile extends HttpServlet {
                     Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                     System.out.println("加载驱动成功！");
                     //2.连接
-                    con= DriverManager.getConnection(dbURL, "sa", "123456");
                     PreparedStatement psmt=null;
-                    String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-                    String dburl = "jdbc:sqlserver://localhost:1433;DatabaseName=test"; //改写使用jdbcconect
                     String username = "sa";
                     String password = "123456";
                     con = DriverManager.getConnection(dburl, username, password);
-                    String sql="insert into people values(?,?,?)";
-
+                    String sql="insert into zhouky_Score08 values(?,?,?,?)";
                     psmt=con.prepareStatement(sql);
 // 创建对Excel工作簿文件的引用?
                     String filePath = realSavePath+ "\\" + saveFilename;
@@ -197,12 +193,13 @@ public class uploadFile extends HttpServlet {
                             System.out.println(value);
                             String[] val = value.split(",");
                             if(val.length > 1) {
-                                double ival = Double.parseDouble(val[2]);
+                                double ival = Double.parseDouble(val[3]);
                                 int ival2 = (int) Math.round(ival);
                                 System.out.println(ival2);
                                 psmt.setString(1, val[0]);
                                 psmt.setString(2, val[1]);
-                                psmt.setInt(3, ival2);
+                                psmt.setString(3, val[2]);
+                                psmt.setInt(4,ival2);
                                 psmt.executeUpdate();
                             }
                         }

@@ -69,8 +69,9 @@ public class adminverify extends HttpServlet {
 			else {
 				String usrName = request.getParameter("Username");
 				String pass = request.getParameter("Password");
-				String sql = "select zky_Tno08 from zhouky_Teacher08 where zky_Tname08 = "+usrName;
+				String sql = "select zky_Tno08 from zhouky_Teacher08 where zky_Tname08 = ?";
 				PreparedStatement pstmt = connection.prepareStatement(sql);
+				pstmt.setString(1,usrName);
 				ResultSet rst = pstmt.executeQuery();
 				String Tno = null;
 				if(rst.next()){
