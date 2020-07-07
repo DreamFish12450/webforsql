@@ -13,6 +13,8 @@
           <element id="library" level="project" name="commons-io-2.4" />
           <element id="library" level="project" name="poi-4.1" />
           <element id="file-copy" path="C:/迅雷下载/commons-math3-3.6.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../javaweb/web/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../javaweb/web/WEB-INF/lib/standard.jar" />
         </element>
       </element>
     </root>

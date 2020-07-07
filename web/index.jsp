@@ -18,7 +18,7 @@
 <form class="box" action="adminverify.do" method="post">
   <h1>Login</h1>
   <span STYLE="color: red;font-size: 13px">${errorInfo}</span>
-  <label>选择身份</label><input type="radio" name="identity" value="学生">学生&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="identity" value="教师">教师
+  <div style="display: inline;color: white;font-size:14px "><label>选择身份</label>&nbsp;&nbsp;<input type="radio" name="identity" value="学生">学生&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="identity" value="教师">教师</div>
   <input type="text" name="Username" placeholder="默认为姓名">
   <input type="password" name="Password" placeholder="默认密码为工号/学号">
   <input type="submit" name = "add" value="登录">

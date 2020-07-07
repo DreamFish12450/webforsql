@@ -6,15 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/services/adminverify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/loginForStudent.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/student.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/teacher.jsp" afterDir="false" />
+    <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="commit before dinner TODO 跳转">
+      <change afterPath="$PROJECT_DIR$/src/com/beans/stuScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/stuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureClass.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureScore.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureScoreResult.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/go.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/news.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/葵花地.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webforsql_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/webforsql_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/util/JDBCConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/util/JDBCConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webforsql.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webforsql.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +87,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/迅雷下载/commons-math3-3.6.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaweb/web/WEB-INF/lib/standard.jar!/" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -84,6 +95,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\webforsql\web\" />
       <recent name="D:\webforsql\src" />
     </key>
   </component>
@@ -261,7 +273,7 @@
       <workItem from="1593999426810" duration="3105000" />
       <workItem from="1594009420127" duration="978000" />
       <workItem from="1594085805226" duration="1103000" />
-      <workItem from="1594101014790" duration="9188000" />
+      <workItem from="1594101014790" duration="17294000" />
     </task>
     <task id="LOCAL-00001" summary="change teste">
       <created>1594009563384</created>
@@ -277,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594106124821</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit before dinner TODO 跳转">
+      <created>1594110771357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594110771357</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +359,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="change teste" />
     <MESSAGE value="change test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="change test2" />
+    <MESSAGE value="commit before dinner TODO 跳转" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before dinner TODO 跳转" />
   </component>
 </project>

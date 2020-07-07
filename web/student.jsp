@@ -8,9 +8,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>选择查询</title>
 </head>
 <body>
-${Sno}
+<div class="centertext">
+    <h1>功 能 选 择 </h1>
+    <p>您的学号是${Sno}</p>
+
+    <div class="button" style="margin-left: 225px;">
+
+        <a href="inqureScore.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询考试成绩</a>
+        <br>
+        <br>
+        <a href="inqureTeacherC.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询个人信息</a>
+        <a href="inqureClass.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询课程开设请况</a>
+
+    </div>
+</div>
+
 </body>
 </html>
