@@ -7,10 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/beans/stuClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/stuGpa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureGpa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureClassResult.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureGpa.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureGpaResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/services/adminverify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/services/adminverify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/stuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/stuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/servlet/inqureScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/servlet/inqureScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/inqureClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureClass.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/inqureScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureScore.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/teacher.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -259,6 +270,7 @@
       <workItem from="1594009420127" duration="978000" />
       <workItem from="1594085805226" duration="1103000" />
       <workItem from="1594101014790" duration="18767000" />
+      <workItem from="1594124005584" duration="5881000" />
     </task>
     <task id="LOCAL-00001" summary="change teste">
       <created>1594009563384</created>

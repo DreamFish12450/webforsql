@@ -2,12 +2,12 @@
   Created by IntelliJ IDEA.
   User: ASUS
   Date: 2020/7/7
-  Time: 20:21
+  Time: 20:48
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %><!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@page import="java.util.*,com.beans.stuClass" %>
 <html lang="en">
 
 <head>
@@ -35,42 +35,9 @@
 
 
     </div>
-    <form action="inqureClasses.do" method="get">
-        <p>您的学号是${sessionScope.Sno}</p><input name="Sno1" value="${sessionScope.Sno}" type="text" style="display: none">
-        <div class="select_part">
-            <span>请选择查询的班级:</span>
-            <select name = "classes">
-                <option>
-                    软工1804
-                </option>
-                <option>
-                    软工1803
-                </option>
-                <option>
-                    软工1802
-                </option>
-                <option>
-                    软工1801
-                </option>
-            </select>
-            <span>请选择查询的学期:</span>
-            <select name = "semester">
-                <option>
-                    2020/2
-                </option>
-                <option>
-                    2020/1
-                </option>
-                <option>
-                    2019/2
-                </option>
-                <option>
-                    2019/1
-                </option>
-            </select>
-            <input type="submit">查询
-        </div>
-    </form>
+    <div>
+        <div class = "showInfo">您查询的班级是${requestScope.classes}学期是${requestScope.open_semester}</div>
+    </div>
     <div class="teacher_content">
         <div class="teacher_list">
             <table>
@@ -81,19 +48,22 @@
                     <th>课程名</th>
                     <th>开设学期</th>
                 </tr>
-                <c:forEach var ="stu" items = "${requestScope.stus}">
+                <c:forEach var ="class1" items = "${requestScope.classarraylist}">
                     <tr>
                         <td>
-                                ${stu.smajor}
+                                ${class1.classnumber}
                         </td>
                         <td>
-                                ${stu.sname}
+                                ${class1.classname}
                         </td>
                         <td>
-                                ${stu.sclass}
+                                ${class1.cno}
                         </td>
                         <td>
-                                ${stu.ssex}
+                                ${class1.cname}
+                        </td>
+                        <td>
+                                ${class1.opensemester}
                         </td>
 
                     </tr>

@@ -104,6 +104,7 @@ public class BaseDao {
                 pstmt.close();
             }
             if (conn != null) {
+                System.out.println("I HAVE CLOSED ALL THE CONNECTION");
                 conn.close();
             }
         } catch (SQLException e) {

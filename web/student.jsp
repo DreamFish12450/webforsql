@@ -26,6 +26,7 @@
         <br>
         <br>
         <a href="inqureTeacherC.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询个人信息</a>
+        <br>
         <a href="inqureClass.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询课程开设请况</a>
 
     </div>
