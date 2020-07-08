@@ -16,7 +16,7 @@
     <meta http-equiv="expires" content="0">  <%--用于设定网页的到期时间，过期后网页必须到服务器上重新传输。--%>
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"> <%--用于告诉搜索引擎，你网页的关键字。--%>
     <meta http-equiv="description" content="This is my page"> <%--用于告诉搜索引擎，你网站的主要内容。--%>
-
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <script type="text/javascript">  /*JS脚本，用于不同的表向对controller产生不同的响应*/

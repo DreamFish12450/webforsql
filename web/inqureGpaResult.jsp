@@ -66,6 +66,7 @@
 
             </table>
         </div>
+        <a href="inqureAllCredit.jsp" class="backToTheFront">返回</a>
     </div>
 
 </div>

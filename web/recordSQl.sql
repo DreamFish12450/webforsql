@@ -35,7 +35,7 @@ end
 go
 
 
-if(exists(select *from sys.objects where name='StuScores2'))
+if(exists(select * from sys.objects where name='StuScores2'))
 drop proc StuScores2
 go
 create procedure StuScores2(@zky_Sno08 nvarchar(10),@zky_openSemester08 nvarchar(10))

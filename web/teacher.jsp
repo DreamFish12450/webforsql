@@ -32,6 +32,9 @@
         <br>
         <br>
         <a href="inqureClass.jsp" class="a_demo" style="background-color: #90f390;color: black;">查看学生名字</a>
+        <br>
+        <br>
+        <a href="inqureAllCredit.jsp" class="a_demo" style="background-color: #90f390;color: black;">查看学生以修学分</a>
 
     </div>
 </div>

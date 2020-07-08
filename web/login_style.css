@@ -136,7 +136,7 @@
 .t_list_item{
     display: inline-table;
     /*left:240px*/
-    width: 95px;
+    /*width: 95px;*/
     line-height: 30px;
     text-align: center;
     padding: 0 10px;
@@ -219,4 +219,17 @@ a{
     line-height: 31px;
     height: 31px;
     margin-left: 50px;
+}
+.formBar{
+    width: 450px;
+    position: relative;
+    margin: 20px auto;
+}
+.formBar a{
+    text-decoration:none;
+}
+.form_a {
+    color: black;
+    position: absolute;
+    right: 0px;
 }

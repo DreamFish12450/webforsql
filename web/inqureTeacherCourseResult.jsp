@@ -65,24 +65,13 @@
 
             </table>
         </div>
+        <a href="inqureAllCredit.jsp" class="backToTheFront">返回</a>
     </div>
 
 </div>
 
 
 </body>
-<script type = "text/javascript">
-    $(function () {
-        $('.nav_tag').css('left', $('.fir').position().left + 10);
-        $('tr:odd').addClass('odd');
-        $('.t_list_item').hover(function () {
-            // console.log(111)
-            $('.nav_tag').stop();
-            $('.nav_tag').animate({left: $(this).position().left + 10}, 'high')
-        })
 
-    })
-
-</script>
 
 </html>
