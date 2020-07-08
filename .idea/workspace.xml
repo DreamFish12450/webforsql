@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/inqureAllCredit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureAllCredit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/inqureTeacherCourseResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureTeacherCourseResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/login_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/teacherAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/teacherAdmin.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +259,7 @@
       <workItem from="1594168134623" duration="9082000" />
       <workItem from="1594182811772" duration="4729000" />
       <workItem from="1594189701547" duration="11686000" />
+      <workItem from="1594204040121" duration="234000" />
     </task>
     <task id="LOCAL-00001" summary="change teste">
       <created>1594009563384</created>

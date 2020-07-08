@@ -1,0 +1,232 @@
+#calendar{
+    width:90%;
+    margin: 10px auto;
+    padding: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.1), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+.month {
+    margin: 0 auto;
+    /*width: 100%;*/
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: #00B8EC;
+}
+.month_nav{
+    width: 80%;
+    margin: 0 auto;
+}
+.back {
+    background: url("static/back.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.arrow {
+    padding: 5px;
+}
+
+.arrow:hover {
+    background: rgba(100, 2, 12, 0.1);
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #00B8EC;
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    justify-content: space-around;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+}
+
+.days {
+    padding: 0;
+    background: #FFFFFF;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 14.2%;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 1rem;
+    color: #000;
+}
+
+.days li .active {
+    padding: 6px 10px;
+    border-radius: 50%;
+    background: #00B8EC;
+    color: #fff;
+}
+
+.days li .other-month {
+    padding: 5px;
+    color: gainsboro;
+}
+
+.days li:hover {
+    background: #e1e1e1;
+}
+
+.lf_bar {
+
+    float: left;
+    width: 250px;
+    /*padding-left: 5px;*/
+    height: 800px;
+    /*background-color: red;*/
+    margin-top:8px;
+    background-color:#ffffff ;
+    opacity: 0.9;
+    border: 2px solid #003b90;
+}
+.teacher_title{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #3b80c6;
+}
+.teacher_nav{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    height: 40px;
+}
+.nav_tag{
+    /*left: 20px;*/
+    /*z-index: 99;*/
+    margin-top: 2px;
+    bottom: 0px;
+    width: 115px;
+    height: 3px;
+    background-color: #0b64b7;
+    position: absolute;
+}
+.t_list_item{
+    display: inline-table;
+    /*left:240px*/
+    /*width: 95px;*/
+    line-height: 30px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+.t_list_item:hover .t_list_item a{
+    text-decoration: none;
+}
+.t_list_item a{
+    text-decoration: none;
+}
+.opac{
+    background: rgba(255,255,255,0.8);
+}
+
+.teacher_list table{
+
+    margin: 50px auto;
+    text-align: center;
+    border-collapse: collapse;
+    /*border-spacing: 2px;*/
+    border: 1px solid grey;
+
+}
+.teacher_list table td,.teacher_list table  th{
+    border:1px solid grey;
+    width: 150px;
+}
+.odd{
+    background-color: rgb(193,214,227);
+    opacity: 1;
+}
+.on{
+    background-color:#022a65;
+    color: white;
+
+}
+.main_container {
+    padding: 10px;
+    width: 980px;
+    min-height: 1300px;
+    margin: 20px auto;
+}
+.t_list_item:hover .t_list_item a{
+    text-decoration: none;
+}
+.t_list_item a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.select_part{
+    margin: 20px auto;
+    text-align: center;
+
+}
+#displaydate,#displaytime{
+    font-size: 32px;
+    color: #999999;
+    font-family: "Microsoft YaHei UI Light", serif;
+    margin-top: 10px;
+    margin-bottom:40px ;
+}
+#s_id{
+    line-height: 25px;
+    height: 25px;
+}
+#inqure_but{
+    background: #3b80c6;
+    opacity: 0.9;
+    color: white;
+    border-radius: 5px;
+    line-height: 31px;
+    height: 31px;
+    margin-left: 50px;
+}
+.formBar{
+    width: 450px;
+    position: relative;
+    margin: 20px auto;
+}
+.formBar a{
+    text-decoration:none;
+}
+.form_a {
+    color: black;
+    position: absolute;
+    right: 0px;
+}
