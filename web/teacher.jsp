@@ -22,7 +22,7 @@
     %>
     <div class="button" style="margin-left: 225px;">
 
-        <a href="inqureScore.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询每门课平均成绩</a>
+        <a href="inqureAvgClass.do" class="a_demo" style="background-color: #90f390;color: black;">查询每门课平均成绩</a>
         <br>
         <br>
         <a href="updateStudents.jsp" class="a_demo" style="background-color: #90f390;color: black;">成绩录入</a>

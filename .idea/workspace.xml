@@ -7,13 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/beans/teacherStudents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureTeacherStu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/servlet/updateScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/updateStudentResult.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/updateStudents.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/avgCScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureAvgClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/inqureAVGClass.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/stuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/stuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/createTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/createTable.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dao/teacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/teacherDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/teacher.jsp" afterDir="false" />
     </list>
@@ -265,7 +263,7 @@
       <workItem from="1594085805226" duration="1103000" />
       <workItem from="1594101014790" duration="18767000" />
       <workItem from="1594124005584" duration="11466000" />
-      <workItem from="1594168134623" duration="6205000" />
+      <workItem from="1594168134623" duration="9082000" />
     </task>
     <task id="LOCAL-00001" summary="change teste">
       <created>1594009563384</created>
@@ -309,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594135516900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="功能实现完啦&#10;TODO 让他变好看 整合">
+      <created>1594174577344</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594174577344</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +381,7 @@
     <MESSAGE value="commit do 完查询 注意bean的命名规范" />
     <MESSAGE value="commit 实现查询gpa 查询成绩 查询班级和课的对应关系" />
     <MESSAGE value="commit 实现查询EXCEL 导入 教师所教课程表的信息。&#10;贷优化 css和html&#10;未实现 查询一个老师的所有信息并修改其中几项" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 实现查询EXCEL 导入 教师所教课程表的信息。&#10;贷优化 css和html&#10;未实现 查询一个老师的所有信息并修改其中几项" />
+    <MESSAGE value="功能实现完啦&#10;TODO 让他变好看 整合" />
+    <option name="LAST_COMMIT_MESSAGE" value="功能实现完啦&#10;TODO 让他变好看 整合" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.dao;
 
+import com.beans.avgCScore;
 import com.beans.stuScore;
 import com.beans.teacherCourse;
 import com.beans.teacherStudents;
@@ -69,4 +70,28 @@ public class teacherDao extends BaseDao {
         }
         closeALL(conn,pstmt,null);
     }
+    public  ArrayList<avgCScore> getClassScore() throws SQLException {
+//        Connection connection = getConn();
+        String sql="SELECT Zhouky_Score08.zky_Cno08,avg(zky_Score08) avg_score\n" +
+                "FROM Zhouky_Score08,Zhouky_Courses08\n" +
+                "WHERE Zhouky_Score08.zky_Cno08=Zhouky_Courses08.zky_Cno08\n" +
+                "Group by Zhouky_Score08.zky_Cno08";
+
+        ResultSet rs = executeQuerySQL(sql,null);
+        ArrayList<avgCScore> list=new ArrayList<avgCScore>();
+       while (rs.next())
+        {
+            avgCScore temp=new avgCScore();
+            temp.setCno(rs.getString(1));
+            temp.setAvg_score(rs.getDouble(2));
+            System.out.println(temp.getAvg_score()+"here is avgScore");
+            list.add(temp);
+        }
+        closeALL(conn,pstmt,null);
+        return list;
+
+    }
 }
+    
+
+
