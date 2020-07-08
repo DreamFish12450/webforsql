@@ -5,6 +5,7 @@ import com.beans.stuScore;
 import com.beans.teacherCourse;
 import com.beans.teacherStudents;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -70,14 +71,15 @@ public class teacherDao extends BaseDao {
         }
         closeALL(conn,pstmt,null);
     }
-    public  ArrayList<avgCScore> getClassScore() throws SQLException {
+    public  ArrayList<avgCScore> getClassScore() throws SQLException, ClassNotFoundException {
 //        Connection connection = getConn();
-        String sql="SELECT Zhouky_Score08.zky_Cno08,avg(zky_Score08) avg_score\n" +
-                "FROM Zhouky_Score08,Zhouky_Courses08\n" +
-                "WHERE Zhouky_Score08.zky_Cno08=Zhouky_Courses08.zky_Cno08\n" +
-                "Group by Zhouky_Score08.zky_Cno08";
-
-        ResultSet rs = executeQuerySQL(sql,null);
+//        String sql="SELECT Zhouky_Score08.zky_Cno08,avg(zky_Score08) avg_score\n" +
+//                "FROM Zhouky_Score08,Zhouky_Courses08\n" +
+//                "WHERE Zhouky_Score08.zky_Cno08=Zhouky_Courses08.zky_Cno08\n" +
+//                "Group by Zhouky_Score08.zky_Cno08";
+        Connection connection = getConn();
+        CallableStatement cs=connection.prepareCall("{call  CavgGrade}");
+        ResultSet rs = cs.executeQuery();
         ArrayList<avgCScore> list=new ArrayList<avgCScore>();
        while (rs.next())
         {
@@ -87,6 +89,8 @@ public class teacherDao extends BaseDao {
             System.out.println(temp.getAvg_score()+"here is avgScore");
             list.add(temp);
         }
+       cs.close();
+       connection.close();
         closeALL(conn,pstmt,null);
         return list;
 

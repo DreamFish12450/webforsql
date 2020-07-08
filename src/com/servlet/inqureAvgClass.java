@@ -30,7 +30,7 @@ public class inqureAvgClass extends HttpServlet {
 //            request.setAttribute("sno",Sno);
  //           request.setAttribute("scores",scores);
   //          request.setAttribute("open_semester",ose);
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/inqureAVGClass.jsp");

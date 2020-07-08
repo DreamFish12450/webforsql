@@ -55,11 +55,12 @@
 
             </table>
         </div>
+        <a href="inqureTeacherCourse.jsp" class="backToTheFront">返回</a>
 
 
 </div>
 
-
+</div>
 </body>
 
 

@@ -39,6 +39,7 @@ public class stuDao  extends BaseDao{
             temp.setOpen_semester(openSemester);
             scores.add(temp);
         }
+        cs.close();
         connection.close();
         closeALL(conn,pstmt,rs);
         return scores;
