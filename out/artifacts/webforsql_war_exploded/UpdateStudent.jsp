@@ -1,8 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@page import="com.beans.Student"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<%@page import="com.beans.Student" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -27,7 +27,7 @@
 <form action="controller?action=UpdateStudent.do" method="post">
     <table align="center">
         <%
-            Student s=(Student)request.getAttribute("s");
+            Student s = (Student) request.getAttribute("s");
         %>
         <tr>
             <td>学号</td>
@@ -37,15 +37,16 @@
         </tr>
         <tr>
             <td>性别</td>
-            <td><input type="radio" name="Ssex" value="男"<%if("男".equals(s.getSsex())){ %> checked="checked"<%} %>/>男
-                <input type="radio" name="Ssex" value="女"<%if("女".equals(s.getSsex())){ %> checked="checked"<%} %>/>女
+            <td><input type="radio" name="Ssex" value="男"<%if ("男".equals(s.getSsex())) { %> checked="checked"<%} %>/>男
+                <input type="radio" name="Ssex" value="女"<%if ("女".equals(s.getSsex())) { %> checked="checked"<%} %>/>女
             </td>
             <td>年龄</td>
             <td><input type="text" name="Sage" id="Sage" value="<%=s.getSage() %>"/></td>
         </tr>
         <tr>
             <td>生源所在地</td>
-            <td><input type="text" name="sourceOfStudents" id="sourceOfStudents" value="<%=s.getSourceOfStudents()%>"/></td>
+            <td><input type="text" name="sourceOfStudents" id="sourceOfStudents" value="<%=s.getSourceOfStudents()%>"/>
+            </td>
             <td>班级编号</td>
             <td><input type="text" name="classNumber" id="classNumber" value="<%=s.getClassNumber() %>"/></td>
         </tr>

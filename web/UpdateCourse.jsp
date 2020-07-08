@@ -1,8 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@page import="com.beans.Course"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<%@page import="com.beans.Course" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -27,11 +27,11 @@
 <form action="controller?action=UpdateCourse.do" method="post">
     <table align="center">
         <%
-            Course s=(Course)request.getAttribute("s");
+            Course s = (Course) request.getAttribute("s");
         %>
         <tr>
             <td>课程编号</td>
-            <td><input type="text" name="Cno" id="Cno" value="<%=s.getCno() %>" /></td>
+            <td><input type="text" name="Cno" id="Cno" value="<%=s.getCno() %>"/></td>
             <td>开设学期</td>
             <td><input type="text" name="openSemester" id="openSemester" value="<%=s.getOpenSemester() %>"/></td>
         </tr>
@@ -44,7 +44,8 @@
         </tr>
         <tr>
             <td>考核性质</td>
-            <td><input type="text" name="natureofAssessment" id="natureofAssessment" value="<%=s.getNatureofAssessment() %>"/></td>
+            <td><input type="text" name="natureofAssessment" id="natureofAssessment"
+                       value="<%=s.getNatureofAssessment() %>"/></td>
             <td>学分</td>
             <td><input type="text" name="Credit" id="Credit" value="<%=s.getCredit() %>"/></td>
         </tr>

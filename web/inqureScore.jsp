@@ -5,7 +5,8 @@
   Time: 17:24
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html lang="en">
@@ -35,10 +36,10 @@
 
     </div>
     <form action="inqureScore.do">
-        <p>您的学号是${sessionScope.Sno}</p><input name="Sno1" value="${sessionScope.Sno}" type="hidden" >
+        <p>您的学号是${sessionScope.Sno}</p><input name="Sno1" value="${sessionScope.Sno}" type="hidden">
         <div class="select_part">
             <span>请选择查询的学期:</span>
-            <select name = "semester">
+            <select name="semester">
                 <option>
                     2020/2
                 </option>
@@ -66,7 +67,7 @@
                     <th>开设学期</th>
                     <th>成绩</th>
                 </tr>
-                <c:forEach var ="stu" items = "${requestScope.stus}">
+                <c:forEach var="stu" items="${requestScope.stus}">
                     <tr>
                         <td>
                                 ${stu.smajor}
@@ -93,7 +94,7 @@
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

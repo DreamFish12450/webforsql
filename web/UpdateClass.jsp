@@ -1,8 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@page import="com.beans.Class"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<%@page import="com.beans.Class" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -27,7 +27,7 @@
 <form action="controller?action=UpdateClass.do" method="post">
     <table align="center">
         <%
-            Class s=(Class)request.getAttribute("s");
+            Class s = (Class) request.getAttribute("s");
         %>
         <tr>
             <td>专业号</td>
@@ -37,7 +37,7 @@
         </tr>
         <tr>
             <td>班级名</td>
-            <td><input type="text" name="className" id="className" value="<%=s.getClassName() %>" />
+            <td><input type="text" name="className" id="className" value="<%=s.getClassName() %>"/>
             </td>
             <td>班级人数</td>
             <td><input type="text" name="classSize" id="classSize" value="<%=s.getClassSize() %>"/></td>

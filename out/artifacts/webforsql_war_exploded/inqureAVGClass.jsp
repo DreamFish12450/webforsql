@@ -5,7 +5,8 @@
   Time: 21:43
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html lang="en">
@@ -51,7 +52,7 @@
                     <th>平均分数</th>
 
                 </tr>
-                <c:forEach var ="gpa" items = "${requestScope.list}">
+                <c:forEach var="gpa" items="${requestScope.list}">
                     <tr>
                         <td>
                                 ${gpa.cno}
@@ -66,7 +67,7 @@
     </div>
 
 </div>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

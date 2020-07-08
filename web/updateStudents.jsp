@@ -5,7 +5,8 @@
   Time: 9:10
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="java.util.*,com.beans.stuScore" %>
 <html lang="en">
@@ -45,12 +46,11 @@
     </div>
 
 
-
-
-<%--    <input type="hidden" name="Tno" value="${sessionScope.Tno}">--%>
+    <%--    <input type="hidden" name="Tno" value="${sessionScope.Tno}">--%>
     <input type="hidden" name="Tno" value="T02">
     <form action="inqureTeacherStudents.do" method="get" class=" formBar">
-        <span>您的工号是${sessionScope.Tno}</span> <input type="submit" value="查询"><span class="form_a"><a href="editScore.jsp" >批量导入</a></span>
+        <span>您的工号是${sessionScope.Tno}</span> <input type="submit" value="查询"><span class="form_a"><a
+            href="editScore.jsp">批量导入</a></span>
     </form>
     <div class="teacher_content">
         <div class="teacher_list">
@@ -70,7 +70,7 @@
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

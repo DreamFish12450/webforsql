@@ -1,7 +1,7 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -12,28 +12,35 @@
     <title>学生查询and添加学生</title>
 
     <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">  <%--先发送请求，与服务器确认该资源是否被更改，如果未被更改，则使用缓存。--%>
-    <meta http-equiv="expires" content="0">  <%--用于设定网页的到期时间，过期后网页必须到服务器上重新传输。--%>
-    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"> <%--用于告诉搜索引擎，你网页的关键字。--%>
-    <meta http-equiv="description" content="This is my page"> <%--用于告诉搜索引擎，你网站的主要内容。--%>
+    <meta http-equiv="cache-control" content="no-cache">
+    <%--先发送请求，与服务器确认该资源是否被更改，如果未被更改，则使用缓存。--%>
+    <meta http-equiv="expires" content="0">
+    <%--用于设定网页的到期时间，过期后网页必须到服务器上重新传输。--%>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <%--用于告诉搜索引擎，你网页的关键字。--%>
+    <meta http-equiv="description" content="This is my page">
+    <%--用于告诉搜索引擎，你网站的主要内容。--%>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <script type="text/javascript">  /*JS脚本，用于不同的表向对controller产生不同的响应*/
-    function find(){
-        document.forms[0].action="controller?action=FindStudent.do";
+    function find() {
+        document.forms[0].action = "controller?action=FindStudent.do";
         document.forms[0].submit();
     }
-    function add(){
-        document.forms[0].action="controller?action=AddStudent.do";
+
+    function add() {
+        document.forms[0].action = "controller?action=AddStudent.do";
         document.forms[0].submit();
     }
-    function retu(){
-        document.forms[0].action="controller?action=index.do";
+
+    function retu() {
+        document.forms[0].action = "controller?action=index.do";
         document.forms[0].submit();
     }
-    function retu2(){
-        document.forms[0].action="controller?action=logination.do";
+
+    function retu2() {
+        document.forms[0].action = "controller?action=logination.do";
         document.forms[0].submit();
     }
     </script>

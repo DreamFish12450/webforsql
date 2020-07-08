@@ -6,7 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html lang="en">
@@ -26,9 +27,10 @@
         <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生信息</span>
     </div>
 
-    <form method="POST" enctype="multipart/form-data" action="<%=request.getContextPath()%>/UploadServlet" class="formBar">
+    <form method="POST" enctype="multipart/form-data" action="<%=request.getContextPath()%>/UploadServlet"
+          class="formBar">
         文件: <input type="file" name="upfile">&nbsp;&nbsp;&nbsp;&nbsp;
-<%--        <br/>--%>
+        <%--        <br/>--%>
         <input type="submit" value="上传">
     </form>
     <div class="teacher_content">
@@ -42,7 +44,7 @@
                     <th>开设学期</th>
                     <th>成绩</th>
                 </tr>
-                <c:forEach var ="stu" items = "${requestScope.stus}">
+                <c:forEach var="stu" items="${requestScope.stus}">
                     <tr>
                         <td>
                                 ${stu.smajor}
@@ -70,7 +72,7 @@
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

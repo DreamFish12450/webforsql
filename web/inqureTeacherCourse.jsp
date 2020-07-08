@@ -46,7 +46,8 @@
     </div>
 
     <form action="inqureTeacherCourse.do" method="get" class="formBar">
-        <span>您的工号是${sessionScope.Tno}</span><input type="hidden" name="Tno" value="${sessionScope.Tno}"><input type="submit" value="查询">
+        <span>您的工号是${sessionScope.Tno}</span><input type="hidden" name="Tno" value="${sessionScope.Tno}"><input
+            type="submit" value="查询">
     </form>
     <div class="teacher_content">
         <div class="teacher_list">
@@ -67,7 +68,7 @@
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

@@ -6,7 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="java.util.*,com.beans.stuGpa" %>
 <html lang="en">
@@ -46,7 +47,7 @@
                     <th>绩点</th>
                     <th>排名</th>
                 </tr>
-                <c:forEach var ="gpa" items = "${requestScope.gpas}">
+                <c:forEach var="gpa" items="${requestScope.gpas}">
                     <tr>
                         <td>
                                 ${gpa.sno}
@@ -73,7 +74,7 @@
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

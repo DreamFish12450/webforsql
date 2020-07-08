@@ -17,7 +17,7 @@
     <p>您的学号是${Sno}</p>
     <%
         String Sno = (String) request.getAttribute("Sno");
-        session.setAttribute("Sno",Sno);
+        session.setAttribute("Sno", Sno);
 
     %>
     <div class="button" style="margin-left: 225px;">

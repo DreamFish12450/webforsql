@@ -5,7 +5,8 @@
   Time: 18:38
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="java.util.*,com.beans.stuScore" %>
 <html lang="en">
@@ -25,7 +26,7 @@
         <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生选课</span>
     </div>
 
-    <div class = "showInfo">您查询的学号是${requestScope.sno}学期是${requestScope.open_semester}</div>
+    <div class="showInfo">您查询的学号是${requestScope.sno}学期是${requestScope.open_semester}</div>
     <div class="teacher_content">
         <div class="teacher_list">
             <table>
@@ -37,7 +38,7 @@
                     <th>开设学期</th>
                     <th>成绩</th>
                 </tr>
-                <c:forEach var ="score" items = "${requestScope.scores}">
+                <c:forEach var="score" items="${requestScope.scores}">
                     <tr>
                         <td>
                                 ${score.sno}
@@ -64,14 +65,14 @@
 
             </table>
         </div>
-        <div><a href="inqureScore.jsp">再次查询</a> </div>
+        <div><a href="inqureScore.jsp">再次查询</a></div>
     </div>
 
 </div>
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

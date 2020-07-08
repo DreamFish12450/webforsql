@@ -34,7 +34,7 @@
 
     </div>
     <form action="inqureGpa.do" method="get">
-            <input type="submit" value="查询">
+        <input type="submit" value="查询">
     </form>
     <div class="teacher_content">
         <div class="teacher_list">
@@ -55,7 +55,7 @@
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

@@ -18,8 +18,8 @@
     <link href="login_style.css" rel="stylesheet" type="text/css">
     <title>教师名录</title>
     <script>
-        $(document).ready(function(){
-            $(".qaq").click(function(){
+        $(document).ready(function () {
+            $(".qaq").click(function () {
                 console.log($(this).closest(".tab"));
                 par = $(this).closest(".tab");
                 son = par.find($("input[type='text']"));
@@ -28,20 +28,20 @@
                 arr.push($(son).val());
                 arr.push(par.find($('.Sno')).text());
                 arr.push(par.find($('.Cno')).text());
-                console.log("i show "+arr)
+                console.log("i show " + arr)
                 $.ajax({
-                    type:'post',
+                    type: 'post',
                     //ansyv:true,
-                    cache:false,
-                    data:{
-                        arr:arr
+                    cache: false,
+                    data: {
+                        arr: arr
                     },
-                    datatype:'json',
-                    url:'updateScore.do',
-                    success:function(data){
+                    datatype: 'json',
+                    url: 'updateScore.do',
+                    success: function (data) {
                         alert("修改成功");
                     },
-                    error:function(){
+                    error: function () {
                     }
                 })
 
@@ -66,7 +66,7 @@
                     <th>成绩</th>
                     <th></th>
                 </tr>
-                <c:forEach var ="tas" items = "${requestScope.tass}">
+                <c:forEach var="tas" items="${requestScope.tass}">
                     <tr class="tab">
                         <td class="Sno">
                                 ${tas.sno}
@@ -87,7 +87,7 @@
                             <input type="text" value="${tas.score}">
                         </td>
                         <td>
-                            <input type="button" class="qaq" value="修改" />
+                            <input type="button" class="qaq" value="修改"/>
                         </td>
                     </tr>
                 </c:forEach>
@@ -101,7 +101,7 @@
 
 
 </body>
-<script type = "text/javascript">
+<script type="text/javascript">
     $(function () {
         $('.nav_tag').css('left', $('.fir').position().left + 10);
         $('tr:odd').addClass('odd');

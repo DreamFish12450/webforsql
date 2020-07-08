@@ -1,8 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@page import="com.beans.Teacher"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<%@page import="com.beans.Teacher" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -27,7 +27,7 @@
 <form action="controller?action=UpdateTeacher.do" method="post">
     <table align="center">
         <%
-            Teacher s=(Teacher)request.getAttribute("s");
+            Teacher s = (Teacher) request.getAttribute("s");
         %>
         <tr>
             <td>编号</td>
@@ -37,8 +37,8 @@
         </tr>
         <tr>
             <td>性别</td>
-            <td><input type="radio" name="Tsex" value="男"<%if("男".equals(s.getTsex())){ %> checked="checked"<%} %>/>男
-                <input type="radio" name="Tsex" value="女"<%if("女".equals(s.getTsex())){ %> checked="checked"<%} %>/>女
+            <td><input type="radio" name="Tsex" value="男"<%if ("男".equals(s.getTsex())) { %> checked="checked"<%} %>/>男
+                <input type="radio" name="Tsex" value="女"<%if ("女".equals(s.getTsex())) { %> checked="checked"<%} %>/>女
             </td>
             <td>年龄</td>
             <td><input type="text" name="Tage" id="Tage" value="<%=s.getTage() %>"/></td>
@@ -51,7 +51,7 @@
         </tr>
         <tr>
             <td colspan="4" align="center">
-<%--                <input type="button" onclick="controller?action=FindTeacher.do"  value="查找"  />--%>
+                <%--                <input type="button" onclick="controller?action=FindTeacher.do"  value="查找"  />--%>
                 <input type="submit" value="确定"/>
                 <input type="reset" value="重置">
             </td>
