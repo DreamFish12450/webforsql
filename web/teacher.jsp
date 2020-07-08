@@ -25,7 +25,7 @@
         <a href="inqureScore.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询每门课平均成绩</a>
         <br>
         <br>
-        <a href="inqureTeacherC.jsp" class="a_demo" style="background-color: #90f390;color: black;">成绩录入</a>
+        <a href="updateStudents.jsp" class="a_demo" style="background-color: #90f390;color: black;">成绩录入</a>
         <br>
         <br>
         <a href="inqureTeacherCourse.jsp" class="a_demo" style="background-color: #90f390;color: black;">查看任课信息</a>

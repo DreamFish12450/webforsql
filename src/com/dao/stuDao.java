@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class stuDao  extends BaseDao{
     public ArrayList<stuScore>  getScore(String Sno,String openSemester) throws SQLException, ClassNotFoundException {
-        Connection connection = getConn();
+//        Connection connection = getConn();
         String sql = "select * from StuScores where zky_Sno08=? and zky_openSemester08 = ?";
         String []args = new String[2];
         args[0] = Sno;
@@ -39,7 +39,7 @@ public class stuDao  extends BaseDao{
         return scores;
     }
     public ArrayList<stuClass> getClasses(String className, String semester)throws SQLException, ClassNotFoundException {
-        Connection connection = getConn();
+//        Connection connection = getConn();
         String sql = "select * from ClassCourse where zky_className=? and zky_openSemester08 = ?";
         String []args = new String[2];
         args[0] = className;
@@ -59,7 +59,7 @@ public class stuDao  extends BaseDao{
         return classes;
     }
     public ArrayList<stuGpa> getGpa()throws SQLException, ClassNotFoundException {
-        Connection connection = getConn();
+//        Connection connection = getConn();
         String sql = "select * from Stu_GPA";
         String []args = new  String[2];
         ArrayList<stuGpa> gpas = new ArrayList<stuGpa>();
