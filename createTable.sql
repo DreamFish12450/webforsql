@@ -14,27 +14,27 @@ zky_Mno08 nvarchar(10) primary key,
 zky_Mname08 nvarchar(15),
 )
 
-create table zhaodj_Class08(--创建班级表
-zdj_classNumber08 NVARCHAR(5)  primary key,
-zdj_Mno08 NVARCHAR(10),
-zdj_classSize08 INT ,
-zdj_isExperimental08 NVARCHAR(2) NOT NULL CHECK(zdj_isExperimental08 IN('是','否'))
+create table Zhouky_Class08(--创建班级表
+zky_classNumber08 NVARCHAR(5)  primary key,
+zky_Mno08 NVARCHAR(10),
+zky_classSize08 INT ,
+zky_isExperimental08 NVARCHAR(2) NOT NULL CHECK(zky_isExperimental08 IN('是','否'))
 )
 
-create table zhaodj_ClassOpen08(--创建班级开设表
-zdj_classNumber08 NVARCHAR(5),
-zdj_Cno08 NVARCHAR(5) ,
-zdj_openSemester08 NVARCHAR(10),
-CONSTRAINT [PK_zhaodj_ClassOpen08] PRIMARY KEY(zdj_classNumber08,zdj_Cno08,zdj_openSemester08)
+create table Zhouky_ClassOpen08(--创建班级开设表
+zky_classNumber08 NVARCHAR(5),
+zky_Cno08 NVARCHAR(5) ,
+zky_openSemester08 NVARCHAR(10),
+CONSTRAINT [PK_Zhouky_ClassOpen08] PRIMARY KEY(zky_classNumber08,zky_Cno08,zky_openSemester08)
 )
 
-create table zhaodj_Teacher08(--创建教师表
-zdj_Tno08 NVARCHAR(10) primary key,
-zdj_Tname08 NVARCHAR(5),
-zdj_Tsex08 NVARCHAR(2),
-zdj_Tage08 int,
-zdj_Ttitle08 NVARCHAR(10),
-zdj_Tphone08 NVARCHAR(15)
+create table Zhouky_Teacher08(--创建教师表
+zky_Tno08 NVARCHAR(10) primary key,
+zky_Tname08 NVARCHAR(5),
+zky_Tsex08 NVARCHAR(2),
+zky_Tage08 int,
+zky_Ttitle08 NVARCHAR(10),
+zky_Tphone08 NVARCHAR(15)
 )
 create table Zhuxy_Attendclass08(--创建上课表
 zxy_Tno08 nvarchar(10),
@@ -82,22 +82,22 @@ totalCredits08 int
 
 
 -----------------------------创建外键：
-alter table zhaodj_Score08  add  primary key(zdj_Sno08,zdj_Cno08,zdj_openSemester08)
-alter table zhaodj_Credits08  add  primary key(zdj_Sno08)
-alter table zhaodj_MajorESet08  add  primary key(zdj_Mno08)
-alter table zhaodj_MajorESet08  add constraint FK_zhaodj_MajorESetMno08 FOREIGN KEY(zdj_Mno08) REFERENCES zhaodj_Major08(zdj_Mno08)
-alter table zhaodj_MajorESet08  add constraint FK_zhaodj_MajorESetschoolName08 FOREIGN KEY(zdj_schoolName08) REFERENCES zhaodj_School08(zdj_schoolName08)
-alter table zhaodj_Class08  add constraint FK_zhaodj_ClassMno08 FOREIGN KEY(zdj_Mno08) REFERENCES zhaodj_Major08(zdj_Mno08)
-alter table zhaodj_ClassOpen08  add constraint FK_zhaodj_ClassOpenclassNumber08 FOREIGN KEY(zdj_classNumber08) REFERENCES zhaodj_Class08(zdj_classNumber08)
-alter table zhaodj_ClassOpen08  add constraint FK_zhaodj_ClassOpenCnoOpenSemester08 FOREIGN KEY(zdj_Cno08,zdj_openSemester08) REFERENCES zhaodj_Courses08(zdj_Cno08,zdj_openSemester08)
-alter table zhaodj_Attendclass08  add constraint FK_zhaodj_AttendclassTno08 FOREIGN KEY(zdj_Tno08) REFERENCES zhaodj_Teacher08(zdj_Tno08)
-alter table zhaodj_Attendclass08  add constraint FK_zhaodj_AttendclassclassNumber08 FOREIGN KEY(zdj_classNumber08) REFERENCES zhaodj_Class08(zdj_classNumber08)
-alter table zhaodj_Teaching08  add constraint FK_zhaodj_TeachingTno08 FOREIGN KEY(zdj_Tno08) REFERENCES zhaodj_Teacher08(zdj_Tno08)
-alter table zhaodj_Teaching08  add constraint FK_zhaodj_TeachingCnoopenSemester08 FOREIGN KEY(zdj_Cno08 ,zdj_openSemester08) REFERENCES zhaodj_Courses08(zdj_Cno08 ,zdj_openSemester08)
-alter table zhaodj_Score08  add constraint FK_zhaodj_ScoreSno08 FOREIGN KEY(zdj_Sno08) REFERENCES zhaodj_Students08(zdj_Sno08)
-alter table zhaodj_Score08  add constraint FK_zhaodj_ScoreCnoopenSemester08 FOREIGN KEY(zdj_Cno08 ,zdj_openSemester08) REFERENCES zhaodj_Courses08(zdj_Cno08 ,zdj_openSemester08)
-alter table zhaodj_Students08  add constraint FK_zhaodj_StudentsCno08 FOREIGN KEY(zdj_classNumber08) REFERENCES zhaodj_Class08(zdj_classNumber08)
-alter table zhaodj_Credits08  add constraint FK_zhaodj_Credits08 FOREIGN KEY(zdj_Sno08) REFERENCES zhaodj_Students08(zdj_Sno08)
+alter table Zhouky_Score08  add  primary key(zky_Sno08,zky_Cno08,zky_openSemester08)
+alter table Zhouky_Credits08  add  primary key(zky_Sno08)
+alter table Zhouky_MajorESet08  add  primary key(zky_Mno08)
+alter table Zhouky_MajorESet08  add constraint FK_Zhouky_MajorESetMno08 FOREIGN KEY(zky_Mno08) REFERENCES Zhouky_Major08(zky_Mno08)
+alter table Zhouky_MajorESet08  add constraint FK_Zhouky_MajorESetschoolName08 FOREIGN KEY(zky_schoolName08) REFERENCES Zhouky_School08(zky_schoolName08)
+alter table Zhouky_Class08  add constraint FK_Zhouky_ClassMno08 FOREIGN KEY(zky_Mno08) REFERENCES Zhouky_Major08(zky_Mno08)
+alter table Zhouky_ClassOpen08  add constraint FK_Zhouky_ClassOpenclassNumber08 FOREIGN KEY(zky_classNumber08) REFERENCES Zhouky_Class08(zky_classNumber08)
+alter table Zhouky_ClassOpen08  add constraint FK_Zhouky_ClassOpenCnoOpenSemester08 FOREIGN KEY(zky_Cno08,zky_openSemester08) REFERENCES Zhouky_Courses08(zky_Cno08,zky_openSemester08)
+alter table Zhouky_Attendclass08  add constraint FK_Zhouky_AttendclassTno08 FOREIGN KEY(zky_Tno08) REFERENCES Zhouky_Teacher08(zky_Tno08)
+alter table Zhouky_Attendclass08  add constraint FK_Zhouky_AttendclassclassNumber08 FOREIGN KEY(zky_classNumber08) REFERENCES Zhouky_Class08(zky_classNumber08)
+alter table Zhouky_Teaching08  add constraint FK_Zhouky_TeachingTno08 FOREIGN KEY(zky_Tno08) REFERENCES Zhouky_Teacher08(zky_Tno08)
+alter table Zhouky_Teaching08  add constraint FK_Zhouky_TeachingCnoopenSemester08 FOREIGN KEY(zky_Cno08 ,zky_openSemester08) REFERENCES Zhouky_Courses08(zky_Cno08 ,zky_openSemester08)
+alter table Zhouky_Score08  add constraint FK_Zhouky_ScoreSno08 FOREIGN KEY(zky_Sno08) REFERENCES Zhouky_Students08(zky_Sno08)
+alter table Zhouky_Score08  add constraint FK_Zhouky_ScoreCnoopenSemester08 FOREIGN KEY(zky_Cno08 ,zky_openSemester08) REFERENCES Zhouky_Courses08(zky_Cno08 ,zky_openSemester08)
+alter table Zhouky_Students08  add constraint FK_Zhouky_StudentsCno08 FOREIGN KEY(zky_classNumber08) REFERENCES Zhouky_Class08(zky_classNumber08)
+alter table Zhouky_Credits08  add constraint FK_Zhouky_Credits08 FOREIGN KEY(zky_Sno08) REFERENCES Zhouky_Students08(zky_Sno08)
 
 
 

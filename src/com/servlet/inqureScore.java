@@ -20,6 +20,7 @@ public class inqureScore extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         stuDao stuDao = new stuDao();
         String Sno = request.getParameter("Sno1");
+        System.out.println(Sno);
         String ose = request.getParameter("semester");
         try {
             ArrayList<stuScore> scores = stuDao.getScore(Sno,ose);

@@ -4,21 +4,25 @@ import com.beans.stuClass;
 import com.beans.stuGpa;
 import com.beans.stuScore;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class stuDao  extends BaseDao{
     public ArrayList<stuScore>  getScore(String Sno,String openSemester) throws SQLException, ClassNotFoundException {
-//        Connection connection = getConn();
-        String sql = "select * from StuScores where zky_Sno08=? and zky_openSemester08 = ?";
+        Connection connection = getConn();
+//        String sql = "select * from StuScores2 where zky_Sno08=? and zky_openSemester08 = ?";
+        if(connection ==null){
+            System.out.println("error");
+        }
+        CallableStatement cs=connection.prepareCall("{call StuScoresSelect(?,?)}");
+        cs.setString(1,Sno);
+        cs.setString(2,openSemester);
         String []args = new String[2];
         args[0] = Sno;
         args[1] = openSemester;
         ArrayList<stuScore> scores = new ArrayList<stuScore>();
-        ResultSet rs = executeQuerySQL(sql,args);
+//        ResultSet rs = executeQuerySQL(sql,args);
+        ResultSet rs = cs.executeQuery();
         while (rs.next()){
             stuScore temp = new stuScore();
             temp.setSno(Sno);
@@ -35,6 +39,7 @@ public class stuDao  extends BaseDao{
             temp.setOpen_semester(openSemester);
             scores.add(temp);
         }
+        connection.close();
         closeALL(conn,pstmt,rs);
         return scores;
     }

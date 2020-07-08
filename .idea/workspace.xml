@@ -7,13 +7,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/beans/avgCScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/servlet/inqureAvgClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/inqureAVGClass.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/District.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beans/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/common/DateFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/common/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/controller/controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/FindClassDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/FindCourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/FindDistrictDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/FindStudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/FindTeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/LoginDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/OperatorClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/OperatorCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/OperatorStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dao/OperatorTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/AddClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/AddCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/AddStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/AddTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/DeleteClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/DeleteCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/DeleteStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/DeleteTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/FindClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/FindCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/FindDistrict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/FindStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/FindTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/PreUpdateClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/PreUpdateCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/PreUpdateStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/PreUpdateTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/UpdateClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/UpdateCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/UpdateStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/services/UpdateTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/recordSQl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/studentAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/teacherAdmin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/createTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/createTable.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/teacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/teacherDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/teacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/stuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/stuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/servlet/inqureScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/servlet/inqureScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/inqureScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureScore.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -264,6 +308,7 @@
       <workItem from="1594101014790" duration="18767000" />
       <workItem from="1594124005584" duration="11466000" />
       <workItem from="1594168134623" duration="9082000" />
+      <workItem from="1594182811772" duration="4729000" />
     </task>
     <task id="LOCAL-00001" summary="change teste">
       <created>1594009563384</created>
