@@ -40,6 +40,9 @@
         <a class="t_list_item " href="inqureAllCredit.jsp">
             查看学生已修学分
         </a>
+        <a class="t_list_item " href="index.jsp">
+            首页
+        </a>
         <div class="nav_tag"></div>
 
 

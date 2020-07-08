@@ -31,6 +31,9 @@
         <a class="t_list_item on" href="inqureClass.jsp">
             查询课程开设请况
         </a>
+        <a class="t_list_item " href="index.jsp">
+            首页
+        </a>
         <div class="nav_tag"></div>
 
     </div>

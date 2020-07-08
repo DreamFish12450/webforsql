@@ -26,12 +26,17 @@
         <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生信息</span>
     </div>
     <div class="teacher_nav">
+
         <a class="t_list_item fir on " href="inqureScore.jsp">
             查询考试成绩
         </a>
         <a class="t_list_item " href="inqureClass.jsp">
             查询课程开设请况
         </a>
+        <a class="t_list_item " href="index.jsp">
+            首页
+        </a>
+
         <div class="nav_tag"></div>
 
     </div>
