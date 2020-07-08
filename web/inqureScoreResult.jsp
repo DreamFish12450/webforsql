@@ -17,13 +17,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="login_style.css" rel="stylesheet" type="text/css">
-    <title>教师名录</title>
+    <title>成绩查询</title>
 </head>
 
 <body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
 <div class="main_container opac">
     <div class="teacher_title">
-        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生选课</span>
+        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生成绩</span>
     </div>
 
     <div class="showInfo">您查询的学号是${requestScope.sno}学期是${requestScope.open_semester}</div>

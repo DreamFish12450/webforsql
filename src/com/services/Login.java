@@ -27,6 +27,10 @@ public class Login extends HttpServlet {
 		u.setPws(pwd);
 		LoginDao ld=new LoginDao();
 		try {
+			System.out.println("its"+userName);
+			System.out.println(pwd);
+			u.setUserName("sa");
+			u.setPws("123456");
 			ld.login(u);
 			HttpSession session=request.getSession();
 			session.setAttribute("user", u);

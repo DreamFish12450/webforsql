@@ -49,6 +49,7 @@
                     <tr>
                         <td>课程编号</td>
                         <td>开设学期</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td><input type="text" name="Cno" id="Cno"/></td>

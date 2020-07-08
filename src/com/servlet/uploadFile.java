@@ -245,8 +245,8 @@ public class uploadFile extends HttpServlet {
         e.printStackTrace();
     }
     /*request.setAttribute("message",message);*/
-
-    /*request.getRequestDispatcher("/message.jsp").forward(request, response);*/
+        request.getRequestDispatcher("updateStudents.jsp").forward(request,response);
+//    /*request.getRequestDispatcher("/message.jsp").forward(request, response);*/
 }
 
 
@@ -271,6 +271,7 @@ public class uploadFile extends HttpServlet {
             file.mkdirs();
         }
         return dir;
+
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)

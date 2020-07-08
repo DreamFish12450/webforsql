@@ -16,6 +16,7 @@
     <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="login_style.css" rel="stylesheet" type="text/css">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <title>查询平均成绩</title>
 </head>
 
@@ -35,8 +36,8 @@
         <a class="t_list_item " href="inqureTeacherCourse.jsp">
             查看任课信息
         </a>
-        <a class="t_list_item " href="inqureClass.jsp">
-            查看学生名字
+        <a class="t_list_item " href="inqureGpa.jsp">
+            查看学生绩点排名
         </a>
         <a class="t_list_item " href="inqureAllCredit.jsp">
             查看学生已修学分

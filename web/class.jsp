@@ -48,7 +48,7 @@
 </head>
 
 <body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
-
+<div class="main_container opac">
 <form action="" method="post">
     <div class="teacher_content">
         <div class="teacher_list">
@@ -70,20 +70,19 @@
             <h2 align="center">添加班级</h2>
             <table align="center">
                 <tr>
-                    <td>专业号</td>
-                    <td>班级名</td>
                     <td>班级号</td>
+                    <td>专业号</td>
                     <td>班级人数</td>
                     <td>是否为实验班</td>
+                    <td>班级名</td>
                     <td></td>
                 </tr>
                 <tr>
-
-                    <td><input type="text" name="Mno1" id="Mno1"/></td>
                     <td><input type="text" name="classNumber1" id="classNumber1"/></td>
-                    <td><input type="text" name="className1" id="className1"/></td>
+                    <td><input type="text" name="Mno1" id="Mno1"/></td>
                     <td><input type="text" name="classSize1" id="classSize1"/></td>
                     <td><input type="text" name="isExperimental1" id="isExperimental1"/></td>
+                    <td><input type="text" name="className1" id="className1"/></td>
                     <td>
                         <input type="button" onclick="add()" value="确定"/>
                         <input type="reset" value="重置">

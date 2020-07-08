@@ -17,8 +17,8 @@ public class OperatorClass {
             conn.setAutoCommit(false);
             String sql="insert into Zhouky_Class08 values(?,?,?,?,?)";
             PreparedStatement ps=conn.prepareStatement(sql);
-            ps.setString(1, s.getMno());
-            ps.setString(2, s.getClassNumber());
+            ps.setString(1, s.getClassNumber());
+            ps.setString(2, s.getMno());
             ps.setInt(3, s.getClassSize());
             ps.setString(4, s.getIsExperimental());
             ps.setString(5, s.getClassName());
@@ -80,7 +80,7 @@ public class OperatorClass {
         if(s.getIsExperimental()!=null&&s.getIsExperimental().length()>0)
             sb.append(" zky_IsExperimental08='").append(s.getIsExperimental()).append("',");
         if(s.getClassName()!=null&&s.getClassName().length()>0)
-            sb.append(" zky_ClassName08='").append(s.getClassName()).append("',");
+            sb.append(" zky_ClassName='").append(s.getClassName()).append("',");
         sb.append(" zky_ClassNumber08='").append(s.getClassNumber()).append("' where zky_ClassNumber08='").append(s.getClassNumber()).append("'");
         System.out.println(sb);
         return sb.toString();

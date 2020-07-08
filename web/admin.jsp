@@ -54,10 +54,7 @@
             <br>
             <a href="district.jsp" class="a_demo" style="background-color: #90f390;color: black;">地区学生统计</a>
             <br>
-            <br>
-            <a href="district.jsp" class="a_demo" style="background-color: #90f390;color: black;">地区学生统计</a>
-            <br>
-            <br>
+
 
 
         </div>

@@ -61,6 +61,7 @@
                     <td>年龄</td>
                     <td>生源所在地</td>
                     <td>班级编号</td>
+                    <td></td>
                 </tr>
                 <%
                     List<Student> list = (List<Student>) request.getAttribute("list");

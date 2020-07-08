@@ -17,6 +17,7 @@ public class FindTeacherDao {
         Connection conn=null;
         Teacher s=null;
         try {
+//            System.out.println(Tno);
             conn = JdbcUtil.getConnection(u.getUserName(), u.getPwd()); /*通过User帐号与数据库连接*/
             PreparedStatement ps=conn.prepareStatement("select * from Zhouky_Teacher08 where zky_Tno08=?"); /*创建预处理对象，并进行数据库查询*/
             ps.setString(1, Tno);

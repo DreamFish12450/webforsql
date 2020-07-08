@@ -18,7 +18,9 @@
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link href="login_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
 
     <script type="text/javascript">
         function update(value){
@@ -44,12 +46,12 @@
 <body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
 <div class="main_container opac">
     <div class="teacher_title">
-        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生信息</span>
+        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">课程信息</span>
     </div>
 <form action="" method="post">
     <div class="teacher_content">
         <div class="teacher_list">
-    <table align="center" ">
+    <table align="center">
         <tr>
             <td>课程编号</td>
             <td>开设学期</td>
@@ -57,6 +59,7 @@
             <td>学时</td>
             <td>考核性质</td>
             <td>学分</td>
+            <td></td>
         </tr>
         <%
             List<Course> list=(List<Course>)request.getAttribute("list");

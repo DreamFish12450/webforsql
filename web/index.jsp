@@ -17,7 +17,7 @@
 <body>
 <form class="box" action="adminverify.do" method="post">
     <h1>Login</h1>
-    <span STYLE="color: red;font-size: 13px">${errorInfo}</span>
+    <span STYLE="color: red;font-size: 13px">${errorInfo}</span><br>
     <div style="display: inline;color: white;font-size:14px "><label>选择身份</label>&nbsp;&nbsp;<input type="radio" name="identity" value="学生">学生&nbsp;&nbsp;&nbsp;&nbsp;<input
             type="radio" name="identity" value="教师">教师
     </div>

@@ -66,7 +66,7 @@ public class adminverify extends HttpServlet {
 				}
 
 			}
-			else {
+			else if(iden.equals("教师")){
 				String usrName = request.getParameter("Username");
 				String pass = request.getParameter("Password");
 				String sql = "select zky_Tno08 from zhouky_Teacher08 where zky_Tname08 = ?";
@@ -77,6 +77,7 @@ public class adminverify extends HttpServlet {
 				if(rst.next()){
 					Tno = rst.getString("zky_Tno08");
 				}
+				rst.close();
 				jdbcConnect.destoryConnection();
 				if(pass.equals(Tno)){
 					request.setAttribute("Tno",Tno);
@@ -85,6 +86,9 @@ public class adminverify extends HttpServlet {
 					request.setAttribute("errorInfo","用户名密码错误请检查");
 					request.getRequestDispatcher("index.jsp").forward(request,response);
 				}
+			}else{
+				request.setAttribute("errorInfo","请选择身份");
+				request.getRequestDispatcher("index.jsp").forward(request,response);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

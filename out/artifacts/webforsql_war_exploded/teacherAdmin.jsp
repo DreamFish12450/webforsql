@@ -57,7 +57,7 @@
     <input type="button" onclick="find()" value="查询"/>
 
 
-    <div >
+    <div>
         <h2 align="center">添加教师</h2>
         <input type="text" name="Tno1" id="Tno1" placeholder="编号"/>
         <input type="text" name="Tname1" id="Tname1" placeholder="姓名" />

@@ -45,16 +45,16 @@
 <body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
 <div class="main_container opac">
     <div class="teacher_title">
-        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生信息</span>
+        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">地区信息</span>
     </div>
     <form action="" method="post">
         <div class="teacher_content">
             <div class="teacher_list">
-                <table align="center"
-                ">
+                <table align="center">
                 <tr>
                     <td>地区名</td>
                     <td>学生总数</td>
+
                 </tr>
                 <%
                     List<District> list = (List<District>) request.getAttribute("list2");

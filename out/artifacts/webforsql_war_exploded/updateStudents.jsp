@@ -35,8 +35,8 @@
         <a class="t_list_item " href="inqureTeacherCourse.jsp">
             查看任课信息
         </a>
-        <a class="t_list_item " href="inqureClass.jsp">
-            查看学生名字
+        <a class="t_list_item " href="inqureGpa.jsp">
+            查看学生绩点排名
         </a>
         <a class="t_list_item " href="inqureAllCredit.jsp">
             查看学生已修学分

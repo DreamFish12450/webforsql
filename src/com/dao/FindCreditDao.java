@@ -18,7 +18,7 @@ public class FindCreditDao {
         List<Credit> list=new ArrayList<Credit>();
         try {
             conn = JdbcUtil.getConnection(u.getUserName(), u.getPwd()); /*通过User帐号与数据库连接*/
-            PreparedStatement ps=conn.prepareStatement("select  * from zky_Credits08 where zky_totalCredits08=?"); /*创建预处理对象，并进行数据库查询*/
+            PreparedStatement ps=conn.prepareStatement("select  * from zhouky_Credits08 where zky_Sno08=?"); /*创建预处理对象，并进行数据库查询*/
             ps.setString(1, Sno);
             ResultSet rs=ps.executeQuery();  /*resultset对象表示select语句查询得到的记录集合*/
             while(rs.next()){ /*遍历select语句查询得到的记录表*/

@@ -47,7 +47,7 @@
 <body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
 <div class="main_container opac">
     <div class="teacher_title">
-        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生信息</span>
+        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">班级信息</span>
     </div>
     <form action="" method="post">
         <div class="teacher_content">

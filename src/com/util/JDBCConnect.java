@@ -30,6 +30,7 @@ public class JDBCConnect {
     }
     public void destoryConnection(){
         try {
+
             if(conn!=null){
                 conn.close();
             }

@@ -22,17 +22,21 @@ public class FindCredit extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        String option = new String(request.getParameter("Sno").getBytes("iso-8859-1"), "utf-8");
+        String option = new String(request.getParameter("selectOption").getBytes("iso-8859-1"), "utf-8");
         Credit s=new Credit();   /*获取存在request中员工的基本信息，并建立员工对象*/
         s.setSno(new String(request.getParameter("Sno").getBytes("iso-8859-1"), "utf-8"));
-        Users u=(Users)request.getSession().getAttribute("user");  /*获取当前会话中的User使用者，判断其是否有查询的权限*/
+        Users u= new Users();
+        u.setUserName("sa");
+        u.setPws("123456");
         List<Credit> list2=null;
-        if(s.getSno()!=null&&s.getSno().length()>0&&option.equals("查询一个学生")){   /*通过工号来查询员工信息*/
+        System.out.println("the opyion is"+request.getParameter("selectOption"));
+        if(s.getSno()!=null&&s.getSno().length()>0&&request.getParameter("selectOption").equals("查询一个学生")){   /*通过工号来查询员工信息*/
             list2 = new FindCreditDao().findCreditBySno(s.getSno(), u);
             if(list2.size()<=0){
                 request.setAttribute("msg", "未找到结果！");
                 request.getRequestDispatcher("showMessage.jsp").forward(request, response);
             }else{
+                System.out.println("the sno is"+s.getSno());
                 request.setAttribute("list2", list2);
                 request.getRequestDispatcher("inqureAllCreditResult.jsp").forward(request, response);
             }
