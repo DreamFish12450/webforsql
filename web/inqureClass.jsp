@@ -14,33 +14,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <link href="login_style.css" rel="stylesheet" type="text/css">
     <title>查看学生名字</title>
 </head>
 
 <body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
 <div class="main_container opac">
-    <div class="teacher_title">
-<%--        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生名字</span>--%>
-    </div>
+    <div class="teacher_title"></div>
 
     <div class="teacher_nav">
-        <a class="t_list_item fir " href="inqureAvgClass.do">
-            查询每门课平均成绩
+        <a class="t_list_item fir  " href="inqureScore.jsp">
+            查询考试成绩
         </a>
-        <a class="t_list_item " href="updateStudents.jsp">
-            成绩录入
-        </a>
-        <a class="t_list_item " href="inqureTeacherCourse.jsp">
-            查看任课信息
-        </a>
-        <a class="t_list_item  on" href="inqureClass.jsp">
-            查看学生名字
-        </a>
-        <a class="t_list_item " href="inqureAllCredit.jsp">
-            查看学生已修学分
+        <a class="t_list_item on" href="inqureClass.jsp">
+            查询课程开设请况
         </a>
         <div class="nav_tag"></div>
+
     </div>
 
     <form action="inqureClasses.do" method="get">
@@ -106,8 +97,6 @@
 
                     </tr>
                 </c:forEach>
-
-
             </table>
         </div>
     </div>

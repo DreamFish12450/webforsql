@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <link href="login_style.css" rel="stylesheet" type="text/css">
     <title>教师名录</title>
 </head>
@@ -24,17 +24,7 @@
     <div class="teacher_title">
         <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生信息</span>
     </div>
-    <div class="teacher_nav">
-        <a class="t_list_item fir on " href="inqureStu.jsp">
-            查询院系
-        </a>
-        <a class="t_list_item " href="inqureQr1.jsp">
-            查询二维码
-        </a>
-        <div class="nav_tag"></div>
 
-
-    </div>
     <P>您的工号是${sessionScope.Tno}</P><input type="hidden" name="Tno" value="${sessionScope.Tno}">
     <div class="teacher_content">
         <div class="teacher_list">

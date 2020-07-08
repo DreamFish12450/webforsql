@@ -7,26 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="227e388a-963a-428b-a72b-f8361f95b6fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/beans/Credit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dao/FindCreditDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/services/FindCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/inqureAllCredit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/inqureAllCreditResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/editScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/editScore.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/inqureAVGClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureAVGClass.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/inqureClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureClass.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/inqureClassResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureClassResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/inqureGpaResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureGpaResult.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/inqureScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureScore.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/inqureScoreResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureScoreResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/inqureTeacherCourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureTeacherCourse.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/inqureTeacherCourseResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/inqureTeacherCourseResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/login_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/recordSQl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/web/recordSQl.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/teacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/teacherAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/teacherAdmin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/updateStudentResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/updateStudentResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/updateStudents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/updateStudents.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/student.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -278,7 +267,7 @@
       <workItem from="1594124005584" duration="11466000" />
       <workItem from="1594168134623" duration="9082000" />
       <workItem from="1594182811772" duration="4729000" />
-      <workItem from="1594189701547" duration="5617000" />
+      <workItem from="1594189701547" duration="6318000" />
     </task>
     <task id="LOCAL-00001" summary="change teste">
       <created>1594009563384</created>
@@ -329,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594174577344</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="教师好看了">
+      <created>1594195405405</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594195405405</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,6 +393,7 @@
     <MESSAGE value="commit 实现查询gpa 查询成绩 查询班级和课的对应关系" />
     <MESSAGE value="commit 实现查询EXCEL 导入 教师所教课程表的信息。&#10;贷优化 css和html&#10;未实现 查询一个老师的所有信息并修改其中几项" />
     <MESSAGE value="功能实现完啦&#10;TODO 让他变好看 整合" />
-    <option name="LAST_COMMIT_MESSAGE" value="功能实现完啦&#10;TODO 让他变好看 整合" />
+    <MESSAGE value="教师好看了" />
+    <option name="LAST_COMMIT_MESSAGE" value="教师好看了" />
   </component>
 </project>

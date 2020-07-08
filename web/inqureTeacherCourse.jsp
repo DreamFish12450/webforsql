@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <link href="login_style.css" rel="stylesheet" type="text/css">
     <title>教师名录</title>
 </head>

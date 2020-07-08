@@ -22,19 +22,9 @@
 <body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
 <div class="main_container opac">
     <div class="teacher_title">
-        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生信息</span>
+        <img src="static/news.png"><span style="font-size: 24px;line-height:30px ">学生选课</span>
     </div>
-    <div class="teacher_nav">
-        <a class="t_list_item fir on " href="inqureStu.jsp">
-            查询院系
-        </a>
-        <a class="t_list_item " href="inqureQr1.jsp">
-            查询二维码
-        </a>
-        <div class="nav_tag"></div>
 
-
-    </div>
     <div class = "showInfo">您查询的学号是${requestScope.sno}学期是${requestScope.open_semester}</div>
     <div class="teacher_content">
         <div class="teacher_list">

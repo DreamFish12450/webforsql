@@ -21,14 +21,12 @@
 
     %>
     <div class="button" style="margin-left: 225px;">
-
         <a href="inqureScore.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询考试成绩</a>
         <br>
         <br>
-        <a href="inqureTeacherC.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询个人信息</a>
-        <br>
         <a href="inqureClass.jsp" class="a_demo" style="background-color: #90f390;color: black;">查询课程开设请况</a>
-
+        <br>
+        <br>
     </div>
 </div>
 
