@@ -17,8 +17,8 @@
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"> <%--用于告诉搜索引擎，你网页的关键字。--%>
     <meta http-equiv="description" content="This is my page"> <%--用于告诉搜索引擎，你网站的主要内容。--%>
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <link href="login_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript">  /*JS脚本，用于不同的表向对controller产生不同的响应*/
     function find(){
         document.forms[0].action="controller?action=FindTeacher.do";
@@ -40,75 +40,38 @@
 
 </head>
 
-<body>
-<form action="" method="post">
+<body style="background: url('static/bg3.jpg') no-repeat; background-size: 100% 100%; ">
+<div class="main_container opac">
+
+
+<form action="" method="post" class="box1">
     <h2 align="center">教师查询</h2>
-    <table align="center">
-        <tr>
-            <td>教师编号</td>
-            <td><input type="text" name="Tno" id="Tno"/></td>
-        </tr>
-        <tr>
-            <td>教师姓名</td>
-            <td><input type="text" name="Tname" id="Tname"/></td>
-        </tr>
-        <tr>
-            <td>教师职称</td>
-            <td><input type="text" name="Ttitle" id="Ttitle"/></td>
-        </tr>
-<%--        <tr>--%>
-<%--            <td>性别</td>--%>
-<%--            <td><input type="radio" name="sex" value="男"/>男--%>
-<%--                <input type="radio" name="sex" value="女"/>女--%>
-<%--            </td>--%>
-<%--            <td>年龄</td>--%>
-<%--            <td><input type="text" name="age" id="age"/></td>--%>
-<%--        </tr>--%>
-<%--        <tr>--%>
-<%--            <td>身份证号</td>--%>
-<%--            <td><input type="text" name="idNum" id="idNum"/></td>--%>
-<%--            <td>部门名称</td>--%>
-<%--            <td><input type="text" name="depart" id="depart"/></td>--%>
-<%--        </tr>--%>
-        <tr>
-            <td colspan="4" align="center"><input type="button" onclick="find()" value="查询"/></td>
-        </tr>
-    </table>
-    <h2 align="center">添加教师</h2>
-    <table align="center">
-        <tr>
-            <td>编号</td>
-            <td><input type="text" name="Tno1" id="Tno1"/></td>
-            <td>姓名</td>
-            <td><input type="text" name="Tname1" id="Tname1"/></td>
-        </tr>
-        <tr>
-            <td>性别</td>
-            <td><input type="radio" name="Tsex1" value="男" checked="checked"/>男
-                <input type="radio" name="Tsex1" value="女"/>女
-            </td>
-            <td>年龄</td>
-            <td><input type="text" name="Tage1" id="Tage"/></td>
-        </tr>
-        <tr>
-            <td>职称</td>
-            <td><input type="text" name="Ttitle1" id="Ttitle1"/></td>
-            <td>联系电话</td>
-            <td><input type="text" name="Tphone1" id="Tphone"/></td>
-        </tr>
-        <tr>
-            <td colspan="4" align="center">
-                <input type="button" onclick="add()" value="确定"/>
-                <input type="reset" value="重置">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4" align="center">
-                <input type="button" onclick="retu()" value="返回管理界面"/>
-                <input type="button" onclick="retu2()" value="返回登录界面"/>
-            </td>
-        </tr>
-    </table>
+<%--    <span STYLE="color: red;font-size: 13px">${errorInfo}</span>--%>
+    <input type="text" name="Tno" id="Tno" placeholder="教师编号">
+
+    <input type="text" name="Tname" id="Tname" placeholder="教师姓名"/>
+
+
+    <input type="text" name="Ttitle" id="Ttitle" placeholder = "教师职称"/>
+
+    <input type="button" onclick="find()" value="查询"/>
+
+
+    <div >
+        <h2 align="center">添加教师</h2>
+        <input type="text" name="Tno1" id="Tno1" placeholder="编号"/>
+        <input type="text" name="Tname1" id="Tname1" placeholder="姓名" />
+        <div style="display: inline;color: black;font-size:14px "><label>选择性别</label><input type="radio" name="Tsex1" value="男" checked="checked"/>男 <input type="radio" name="Tsex1" value="女"/>女</div>
+        <input type="text" name="Tage1" id="Tage" placeholder="年纪"/>
+        <input type="text" name="Ttitle1" id="Ttitle1 " placeholder="职称"/>
+        <input type="text" name="Tphone1" id="Tphone" placeholder="联系电话"/>
+        <input type="button" onclick="add()" value="确定"/>
+        <input type="reset" value="重置">
+        <input type="button" onclick="retu()" value="返回管理界面"/>
+        <input type="button" onclick="retu2()" value="返回登录界面"/>
+
+    </div>
 </form>
+</div>
 </body>
 </html>

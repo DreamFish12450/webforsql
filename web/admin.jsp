@@ -23,25 +23,46 @@
   <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
   <meta http-equiv="description" content="This is my page">
 
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 <body>
 <form action="">
-  <table align="center" style="margin-top: 15%">
-    <tr>
-      <td><a href="teacherAdmin.jsp">教师管理</a></td>
-      <td width="30"></td>
-      <td><a href="studentAdmin.jsp">学生管理</a></td>
-      <td width="30"></td>
-      <td><a href="course.jsp">课程管理</a></td>
-      <td width="30"></td>
-      <td><a href="class.jsp">班级管理</a></td>
-      <td width="30"></td>
-      <td><a href="district.jsp">地区学生统计</a></td>
-    </tr>
-  </table>
+
+  <div class="centertext">
+    <h1>功 能 选 择 </h1>
+<%--    <p>您的工号是${Tno}</p>--%>
+    <%
+      String Tno = (String) request.getAttribute("Tno");
+      session.setAttribute("Tno",Tno);
+
+    %>
+    <div class="button" style="margin-left: 225px;">
+
+      <a href="teacherAdmin.jsp" class="a_demo" style="background-color: #90f390;color: black;">教师管理</a>
+      <br>
+      <br>
+      <a href="course.jsp" class="a_demo" style="background-color: #90f390;color: black;">课程管理</a>
+      <br>
+      <br>
+      <a href="studentAdmin.jsp" class="a_demo" style="background-color: #90f390;color: black;">学生管理</a>
+      <br>
+      <br>
+      <a href="class.jsp" class="a_demo" style="background-color: #90f390;color: black;">班级管理</a>
+      <br>
+      <br>
+      <a href="district.jsp" class="a_demo" style="background-color: #90f390;color: black;">地区学生统计</a>
+      <br>
+      <br>
+      <a href="district.jsp" class="a_demo" style="background-color: #90f390;color: black;">地区学生统计</a>
+      <br>
+      <br>
+
+
+    </div>
+  </div>
+
 </form>
 
 </body>

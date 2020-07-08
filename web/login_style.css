@@ -178,13 +178,10 @@
 
 }
 .main_container {
-
     padding: 10px;
     width: 980px;
-    min-height: 1000px;
+    min-height: 1300px;
     margin: 20px auto;
-
-
 }
 .t_list_item:hover .t_list_item a{
     text-decoration: none;

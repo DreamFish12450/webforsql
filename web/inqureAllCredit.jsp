@@ -34,7 +34,6 @@
             查看学生已修学分
         </a>
         <div class="nav_tag"></div>
-
     </div>
     <form action="FindCredit.do" method="get">
 <%--        <p>您的学号是${sessionScope.Sno}</p><input name="Sno1" value="${sessionScope.Sno}" type="text" style="display: none">--%>
